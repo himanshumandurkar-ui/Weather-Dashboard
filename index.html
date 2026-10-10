@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weatherly | Weather Dashboard</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<div class="shell">
+<header><a class="brand" href="#"><span class="sun">☀</span> weatherly</a><span class="live"><i></i> Live weather dashboard</span></header>
+<section class="intro"><div><p class="eyebrow">YOUR WEATHER, AT A GLANCE</p><h1>Forecast made <span>simple.</span></h1><p class="sub">Real-time conditions and the forecast for wherever life takes you.</p></div>
+<form id="search-form"><span class="search-icon">⌕</span><input id="city-input" type="search" placeholder="Search a city..." aria-label="Search city" maxlength="80" required><button id="search-button">Search →</button></form></section>
+<p id="status" role="status">Loading weather…</p>
+<section class="layout">
+<article class="panel current"><div class="row"><div><p class="label">CURRENT WEATHER</p><h2 id="city">Nagpur, India</h2><p id="date" class="muted">Loading local date…</p></div><span class="chip">⌖ <span id="zone">Local forecast</span></span></div>
+<div class="hero"><div><div class="temp"><span id="temp">--</span><sup>°</sup></div><p id="condition" class="condition">Getting conditions…</p><p class="muted">Feels like <b id="feels">--°</b></p></div><div id="art" class="art">☀️</div></div>
+<div class="bottom-stats"><div>↗ <span><small>High</small><b id="high">--°</b></span></div><div>↘ <span><small>Low</small><b id="low">--°</b></span></div><div>◷ <span><small>Updated</small><b id="updated">--:--</b></span></div></div></article>
+<article class="panel details"><div class="row"><div><p class="label">WEATHER DETAILS</p><h2>Today's overview</h2></div><span class="spark">✦</span></div>
+<div class="metrics">
+<div class="metric"><div>💧 <span>Humidity</span></div><strong><span id="humidity">--</span><small>%</small></strong><p>Air moisture</p></div>
+<div class="metric"><div>↝ <span>Wind speed</span></div><strong><span id="wind">--</span><small>km/h</small></strong><p>At 10 m above ground</p></div>
+<div class="metric"><div>☂ <span>Precipitation</span></div><strong><span id="rain">--</span><small>mm</small></strong><p>Today's total</p></div>
+<div class="metric"><div>☼ <span>UV index</span></div><strong><span id="uv">--</span></strong><p id="uv-note">UV intensity</p></div>
+</div></article></section>
+<section class="panel forecast"><div class="row"><div><p class="label">PLAN AHEAD</p><h2>5-day forecast</h2></div><span class="chip">Daily outlook</span></div><div id="forecast" class="days"><p class="muted">Forecast will appear here.</p></div></section>
+<p class="credit">Weather data provided by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>.</p>
+<footer><b>weatherly</b><span>Built with HTML, CSS & JavaScript</span></footer>
+</div>
+</body></html>
